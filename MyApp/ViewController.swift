@@ -23,6 +23,11 @@ class ViewController: UIViewController {
         baz.doSomething()
 
         let bar = Bar()
+        /// Sadly this compiles so effectively there is no private way of exposing objective-c api and not exposing it publicly in Swift
+        let norf = bar.norf
+        norf.shouldNotBePublic()
+        // But directly instantiating the type is not possible then?
+//        let n = Norf()
         print("\(bar)")
     }
 }

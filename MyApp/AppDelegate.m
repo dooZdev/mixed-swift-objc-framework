@@ -26,8 +26,16 @@
     // Here we can access the classes from Foo and check that they work:
     
     NSLog(@"AppDelegate");
-    id baz = [[Baz alloc] init];
+    Bar* baz = [[Bar alloc] init];
     NSLog(@"%@", baz);
+    // WARNING: so although this should be private the type itself can be exposed public
+    NSLog(@"%@", baz.norf);
+    // The underlying interface is not public however so uncommenting the line below will not compile
+//    NSLog(@"%@", [baz.norf shouldNotBePublic]);
+    
+    // This works as Baz is public
+    NSLog(@"%@", baz.objcBaz);
+    
     [baz doSomething];
 
     id bar = [[Bar alloc] init];

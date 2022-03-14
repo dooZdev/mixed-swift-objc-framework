@@ -16,6 +16,7 @@
 		3E8CDC151A60643A001A88DE /* MyAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E8CDC141A60643A001A88DE /* MyAppTests.m */; };
 		3E8CDC291A606517001A88DE /* Foo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E8CDC251A60646F001A88DE /* Foo.framework */; };
 		3E8CDC2B1A606535001A88DE /* Foo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3E8CDC251A60646F001A88DE /* Foo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C0410AE127DF49760074B883 /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = C0410AE027DF49760074B883 /* README.markdown */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		3E8CDC131A60643A001A88DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E8CDC141A60643A001A88DE /* MyAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyAppTests.m; sourceTree = "<group>"; };
 		3E8CDC1F1A60646F001A88DE /* Foo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Foo.xcodeproj; sourceTree = "<group>"; };
+		C0410AE027DF49760074B883 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.markdown; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 		3E8CDBEC1A60643A001A88DE = {
 			isa = PBXGroup;
 			children = (
+				C0410AE027DF49760074B883 /* README.markdown */,
 				3E8CDC1E1A606455001A88DE /* Foo */,
 				3E8CDBF71A60643A001A88DE /* MyApp */,
 				3E8CDC111A60643A001A88DE /* MyAppTests */,
@@ -275,6 +278,7 @@
 			files = (
 				3E8CDC041A60643A001A88DE /* Main.storyboard in Resources */,
 				3E8CDC091A60643A001A88DE /* LaunchScreen.xib in Resources */,
+				C0410AE127DF49760074B883 /* README.markdown in Resources */,
 				3E8CDC061A60643A001A88DE /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

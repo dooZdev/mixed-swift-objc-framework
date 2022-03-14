@@ -13,6 +13,15 @@ import Foo_Private
 
 @objc(Bar)
 public class Bar: NSObject {
+    
+    @objc
+    public let objcBaz: Baz = .init()
+    
+    /// Exposing private objective-c type public is possible, just change private to public
+    /// - WARNING: Changing this to public will expose the whole Norf interface to swift!! without warning or compiler error.
+    @objc
+    public let norf: Norf = .init()
+    
     @objc
     public func doSomething() {
         // We can access Baz, which is public:
@@ -21,7 +30,7 @@ public class Bar: NSObject {
         
         // We can also access Norf, even though it is not public:
         let n = Norf()
-        print("\(n)")
+        n.shouldNotBePublic()
         
         let q = Qux()
         print("\(q)")

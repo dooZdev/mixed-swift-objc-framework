@@ -14,7 +14,7 @@ The framework does its usual stuff, and in addition there's a directory called `
 
 With this, Swift code can `import FooPrivate` and then use (private) ObjC classes.
 
-## Private Module
+## Private Module (will expose public in swift!)
 
 When Swift code accesses the Foo module created by the framework, it needs to find the FooPrivate module, too.
 
@@ -25,3 +25,5 @@ We can work around this issue by adding
     }
 
 to the `.modulemap` of the framework. In Xcode this can be done by simply setting `MODULEMAP_PRIVATE_FILE` to point to a module map file with this content.
+
+> As annotated in the code once you add a private header via a private module import they become public knowledge in swift, not in objective-c do.

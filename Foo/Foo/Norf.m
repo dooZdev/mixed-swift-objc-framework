@@ -15,4 +15,7 @@
 
 @implementation Norf
 
+-(void) shouldNotBePublic {
+    NSLog(@"internal function implementation");
+}
 @end
