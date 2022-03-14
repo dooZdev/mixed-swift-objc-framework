@@ -43,6 +43,7 @@
 		3E8CDBE51A605F69001A88DE /* Norf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Norf.h; sourceTree = "<group>"; };
 		3E8CDBE61A605F69001A88DE /* Norf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Norf.m; sourceTree = "<group>"; };
 		3E8CDC281A60648B001A88DE /* Foo.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Foo.xcconfig; sourceTree = "<group>"; };
+		C0410BE927DFA2640074B883 /* export.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = export.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +68,7 @@
 		3E8CDBB71A605E10001A88DE = {
 			isa = PBXGroup;
 			children = (
+				C0410BE927DFA2640074B883 /* export.txt */,
 				3E8CDC281A60648B001A88DE /* Foo.xcconfig */,
 				3E8CDBC31A605E10001A88DE /* Foo */,
 				3E8CDBD01A605E10001A88DE /* FooTests */,
@@ -381,6 +383,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EXPORTED_SYMBOLS_FILE = "/Users/stijnwillems/Developer/mixed-swift-objc-framework/Foo/export.txt";
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/Foo";
 				INFOPLIST_FILE = Foo/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -400,6 +403,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EXPORTED_SYMBOLS_FILE = "/Users/stijnwillems/Developer/mixed-swift-objc-framework/Foo/export.txt";
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/Foo";
 				INFOPLIST_FILE = Foo/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
